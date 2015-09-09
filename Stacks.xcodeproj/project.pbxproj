@@ -14,6 +14,8 @@
 		CDCDF5E11BA0335F00997157 /* pointerStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pointerStack.h; sourceTree = "<group>"; };
 		CDCDF5E21BA0336900997157 /* vectorStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vectorStack.cpp; sourceTree = "<group>"; };
 		CDCDF5E31BA0336900997157 /* vectorStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vectorStack.h; sourceTree = "<group>"; };
+		CDCDF5E41BA0396B00997157 /* stackStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stackStack.cpp; sourceTree = "<group>"; };
+		CDCDF5E51BA0396B00997157 /* stackStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stackStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -27,6 +29,8 @@
 				CDCDF5E11BA0335F00997157 /* pointerStack.h */,
 				CDCDF5E21BA0336900997157 /* vectorStack.cpp */,
 				CDCDF5E31BA0336900997157 /* vectorStack.h */,
+				CDCDF5E41BA0396B00997157 /* stackStack.cpp */,
+				CDCDF5E51BA0396B00997157 /* stackStack.h */,
 			);
 			sourceTree = "<group>";
 		};
