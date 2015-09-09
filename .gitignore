@@ -2,6 +2,8 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+/Stacks.xcodeproj
+
 ## Build generated
 build/
 DerivedData
@@ -47,3 +49,32 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .gitignore - gedit user files
+
+# common trashes
+*~
+*.DS_Store
+*.project
+*.settings
+*.tmp
+*.swp
+.hg
+.bzr
+.svn
+
+# gedit related
+gedit-*
+saved-sessions.xml
+
+# python related
+*.pyc
+*.pyo

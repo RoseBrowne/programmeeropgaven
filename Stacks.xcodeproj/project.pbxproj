@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		CDCDF5D21BA017E100997157 /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
-		CDCDF5D31BA017F600997157 /* arrayStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arrayStack.cpp; sourceTree = "<group>"; };
-		CDCDF5D51BA0181900997157 /* pointerStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pointerStack.cpp; sourceTree = "<group>"; };
-		CDCDF5D71BA0184900997157 /* vectorStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vectorStack.cpp; sourceTree = "<group>"; };
-		CDCDF5D91BA0186400997157 /* stlStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stlStack.cpp; sourceTree = "<group>"; };
+		CDCDF5DB1BA01E6700997157 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CDCDF5DE1BA0335800997157 /* arrayStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arrayStack.cpp; sourceTree = "<group>"; };
+		CDCDF5DF1BA0335800997157 /* arrayStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arrayStack.h; sourceTree = "<group>"; };
+		CDCDF5E01BA0335F00997157 /* pointerStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pointerStack.cpp; sourceTree = "<group>"; };
+		CDCDF5E11BA0335F00997157 /* pointerStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pointerStack.h; sourceTree = "<group>"; };
+		CDCDF5E21BA0336900997157 /* vectorStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vectorStack.cpp; sourceTree = "<group>"; };
+		CDCDF5E31BA0336900997157 /* vectorStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vectorStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		CDCDF5CB1BA017BE00997157 = {
 			isa = PBXGroup;
 			children = (
-				CDCDF5D21BA017E100997157 /* stack.h */,
-				CDCDF5D31BA017F600997157 /* arrayStack.cpp */,
-				CDCDF5D51BA0181900997157 /* pointerStack.cpp */,
-				CDCDF5D71BA0184900997157 /* vectorStack.cpp */,
-				CDCDF5D91BA0186400997157 /* stlStack.cpp */,
+				CDCDF5DB1BA01E6700997157 /* main.cpp */,
+				CDCDF5DE1BA0335800997157 /* arrayStack.cpp */,
+				CDCDF5DF1BA0335800997157 /* arrayStack.h */,
+				CDCDF5E01BA0335F00997157 /* pointerStack.cpp */,
+				CDCDF5E11BA0335F00997157 /* pointerStack.h */,
+				CDCDF5E21BA0336900997157 /* vectorStack.cpp */,
+				CDCDF5E31BA0336900997157 /* vectorStack.h */,
 			);
 			sourceTree = "<group>";
 		};
