@@ -16,6 +16,7 @@
 		CDCDF5E31BA0336900997157 /* vectorStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vectorStack.h; sourceTree = "<group>"; };
 		CDCDF5E41BA0396B00997157 /* stackStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stackStack.cpp; sourceTree = "<group>"; };
 		CDCDF5E51BA0396B00997157 /* stackStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stackStack.h; sourceTree = "<group>"; };
+		CDCDF5E61BA03F9700997157 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -31,6 +32,7 @@
 				CDCDF5E31BA0336900997157 /* vectorStack.h */,
 				CDCDF5E41BA0396B00997157 /* stackStack.cpp */,
 				CDCDF5E51BA0396B00997157 /* stackStack.h */,
+				CDCDF5E61BA03F9700997157 /* makefile */,
 			);
 			sourceTree = "<group>";
 		};
