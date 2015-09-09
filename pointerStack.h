@@ -9,14 +9,13 @@
 #ifndef __Stacks__pointerStack__
 #define __Stacks__pointerStack__
 
-#include <iostream>
 using namespace std;
 
 template <class T>
 struct node {
     T value;
     node *next;
-}
+};
 
 template <class T>
 class pointerStack {
@@ -28,7 +27,7 @@ public:
     void pop(bool& success);
     void top(T& topItem, bool& success);
 private:
-    *top;
+    node *top = NULL;
 };
 
 #endif /* defined(__Stacks__pointerStack__) */
