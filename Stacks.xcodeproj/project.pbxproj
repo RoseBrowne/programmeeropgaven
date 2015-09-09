@@ -6,10 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		CDCDF5D21BA017E100997157 /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		CDCDF5D31BA017F600997157 /* arrayStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arrayStack.cpp; sourceTree = "<group>"; };
+		CDCDF5D51BA0181900997157 /* pointerStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pointerStack.cpp; sourceTree = "<group>"; };
+		CDCDF5D71BA0184900997157 /* vectorStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vectorStack.cpp; sourceTree = "<group>"; };
+		CDCDF5D91BA0186400997157 /* stlStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stlStack.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		CDCDF5CB1BA017BE00997157 = {
 			isa = PBXGroup;
 			children = (
+				CDCDF5D21BA017E100997157 /* stack.h */,
+				CDCDF5D31BA017F600997157 /* arrayStack.cpp */,
+				CDCDF5D51BA0181900997157 /* pointerStack.cpp */,
+				CDCDF5D71BA0184900997157 /* vectorStack.cpp */,
+				CDCDF5D91BA0186400997157 /* stlStack.cpp */,
 			);
 			sourceTree = "<group>";
 		};
