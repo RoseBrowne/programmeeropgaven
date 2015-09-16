@@ -6,15 +6,60 @@
 //
 //
 
-#ifndef __Stacks__arrayStack__
-#define __Stacks__arrayStack__
+#ifndef arrayStack_h
+#define arrayStack_h
 
-#include <stdio.h>
+using namespace std;
 
-template <class T>
+const int MAX = 100;
 class arrayStack {
-public:
-    bool isEmpty();
+	public:
+	
+		arrayStack() {
+			create();
+		}
+
+		void create() {
+			index = -1;
+		}
+
+		bool isEmpty() {
+			return (index == -1);
+		}
+
+		void clear() {
+		}
+
+		void push(int newItem, bool & success) {
+			if (index >= (MAX-1)){
+				success = false;
+			}
+			else {
+				index++;
+				theStack[index] = newItem;
+				success = true;
+			}
+		}
+
+		void pop(bool & success) {
+			success = (index > -1);
+			index--;
+		}
+
+		void top(int & topItem, bool & success) {
+			if (isEmpty()){
+				success = false;
+			}
+			else {
+				topItem = theStack[index];
+				success = true;
+			}
+		}
+
+	private:
+		int theStack[MAX];
+		int index;
+    
 };
 
-#endif /* defined(__Stacks__arrayStack__) */
+#endif 
