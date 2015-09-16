@@ -3,12 +3,14 @@
 
 using namespace std;
 
+template <class T>
 class item {
 public:
-	int value;
-	item* next;
+	T value;
+	item<T>* next;
 };
 
+template <class T>
 class pointerStack {
 public:
 	pointerStack() {
@@ -24,7 +26,7 @@ public:
 	}
 
 	void clear() {
-		item* hulp = topItem;
+		item<T>* hulp = topItem;
 		while(hulp != NULL) {
 			hulp = hulp->next;
 			bool success = false;
@@ -32,8 +34,8 @@ public:
 		}
 	}
 
-	void push(int newItem, bool& success) {
-		item* np = new item;
+	void push(T newItem, bool& success) {
+		item<T>* np = new item<T>;
 	    np->value = newItem;
 	    np->next = topItem;
 	    topItem = np;
@@ -41,13 +43,13 @@ public:
 	}
 
 	void pop(bool& success) {
-		item* np = topItem;
+		item<T>* np = topItem;
 		topItem = topItem->next;
 		delete np;
 		success = true;
 	}
 
-	void top(int& getItem, bool& success) {
+	void top(T& getItem, bool& success) {
 		getItem = topItem->value;
 		success = true;
 	}
@@ -57,7 +59,7 @@ public:
 	}
 
 private:
-	item* topItem;
+	item<T>* topItem;
 };
 
 #endif

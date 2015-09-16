@@ -8,11 +8,11 @@ int main() {
 
 	cout << "Welkom bij mijn stapel!" << endl;
 
-	pointerStack MyStack;
+	pointerStack<char> MyStack;
 
 	bool toegevoegd = false;
 
-	MyStack.push(5, toegevoegd);
+	MyStack.push('a', toegevoegd);
 
 	if(MyStack.isEmpty()) {
 		cout << "Stack is leeg" << endl;
@@ -20,9 +20,9 @@ int main() {
 		cout << "Er zit iets in de stack" << endl;
 	}
 
-	MyStack.push(8, toegevoegd);
+	MyStack.push('z', toegevoegd);
 
-	int item;
+	char item;
 	bool gevonden = false;
 
 	MyStack.top(item, gevonden);
