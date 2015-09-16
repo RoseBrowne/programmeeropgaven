@@ -1,3 +1,11 @@
+/**
+* stackStack: file to manage a stack based on the STL stack
+* @author Patrick Bergman (s1553097)
+* @author Rose Browne (studentnummer)
+* @file stackStack.h
+* @date 15-09-2015 Add comments
+**/
+
 #ifndef stackStack_h
 #define stackStack_h
 

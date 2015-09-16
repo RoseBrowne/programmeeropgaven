@@ -1,3 +1,11 @@
+/**
+* stackStack: file to test the stack implementation
+* @author Patrick Bergman (s1553097)
+* @author Rose Browne (studentnummer)
+* @file main.cpp
+* @date 15-09-2015 Add comments
+**/
+
 #include <iostream>
 
 #include "stackStack.h"
@@ -8,7 +16,7 @@ int main() {
 
 	cout << "Welkom bij mijn stapel!" << endl;
 
-	pointerStack<char> MyStack;
+	stackStack<char> MyStack;
 
 	bool toegevoegd = false;
 
@@ -24,6 +32,12 @@ int main() {
 
 	char item;
 	bool gevonden = false;
+
+	MyStack.top(item, gevonden);
+
+	cout << "Op de top zit: " << item << "." << endl;
+
+	MyStack.pop(toegevoegd);
 
 	MyStack.top(item, gevonden);
 
