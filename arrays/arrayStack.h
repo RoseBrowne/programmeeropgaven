@@ -12,8 +12,12 @@
 using namespace std;
 
 const int MAX = 100;
+
+
+template <class T>
 class arrayStack {
 	public:
+		bool popIt;
 	
 		arrayStack() {
 			create();
@@ -28,9 +32,12 @@ class arrayStack {
 		}
 
 		void clear() {
+			while (!isEmpty()){
+				pop(popIt);
+			}
 		}
 
-		void push(int newItem, bool & success) {
+		void push(T newItem, bool & success) {
 			if (index >= (MAX-1)){
 				success = false;
 			}
@@ -46,7 +53,7 @@ class arrayStack {
 			index--;
 		}
 
-		void top(int & topItem, bool & success) {
+		void top(T & topItem, bool & success) {
 			if (isEmpty()){
 				success = false;
 			}
@@ -57,7 +64,7 @@ class arrayStack {
 		}
 
 	private:
-		int theStack[MAX];
+		T theStack[MAX];
 		int index;
     
 };

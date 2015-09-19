@@ -18,7 +18,7 @@ int main(){
 	
     cout << "Welkom!" << endl;
 
-    arrayStack myStack;
+    arrayStack<int> myStack;
 
     if (myStack.isEmpty()){
     	cout << "De stapel is leeg." << endl;
@@ -30,41 +30,70 @@ int main(){
     cout << "Ik ga nu 5 op de stapel pushen." << endl;
     myStack.push(5, stackPush);
     
-    if (myStack.isEmpty()){
-    	cout << "De stapel is leeg." << endl;
-    }
-    else {
-    	cout << "De stapel is niet leeg." << endl;
-    }
-    
     myStack.top(item, stackTop);
     
-    cout << "Het bovenste item is nu: " << item << endl;
-    
+	if (stackTop){
+    	cout << "Het bovenste element op de stapel is: " << item << endl;
+    }
+    else{
+    	cout << "De stapel is leeg, er is geen bovenste element." << endl;
+    }
+	
+	cout << "Ik ga nu 15 op de stapel pushen." << endl;
     myStack.push(15, stackPush);
     
     myStack.top(item, stackTop);
     
-    cout << "Het bovenste item is nu: " << item << endl;
+	if (stackTop){
+    	cout << "Het bovenste element op de stapel is: " << item << endl;
+    }
+    else{
+    	cout << "De stapel is leeg, er is geen bovenste element." << endl;
+    }
     
     cout << "Ik ga nu het bovenste item van de stapel afhalen." << endl;
     myStack.pop(stackPop);
-    
-    if (stackTop){
-    	cout << "Poppen van de stapel is gelukt." << endl;
-    }
-    else {
-    	cout << "Poppen van de stapel is niet gelukt." << endl;
-    }
-    
-    cout << "Ik ga kijken wat het bovenste item van de stapel nu is" << endl; 
     myStack.top(item, stackTop);  
     
-     
-    if (stackTop){
-    	myStack.top(item, stackTop);
-    	cout << "Het bovenste item is nu: " << item << endl;
+	if (stackTop){
+    	cout << "Het bovenste element op de stapel is: " << item << endl;
     }
+    else{
+    	cout << "De stapel is leeg, er is geen bovenste element." << endl;
+    }
+    
+    
+    cout << "Ik ga nu het bovenste item van de stapel afhalen." << endl;
+    myStack.pop(stackPop);
+    myStack.top(item, stackTop);  
+    
+	if (stackTop){
+    	cout << "Het bovenste element op de stapel is: " << item << endl;
+    }
+    else{
+    	cout << "De stapel is leeg, er is geen bovenste element." << endl;
+    }
+    
+    
+    cout << "Ik ga nu 5, 7 en 9 op de stapel pushen." << endl;
+    myStack.push(5, stackPush);
+    myStack.push(7, stackPush);
+    myStack.push(9, stackPush);
+    
+    cout << "IK ga de stapel nu in één keer leeg maken. " << endl;
+    
+    myStack.clear();
+    
+	
+    myStack.top(item, stackTop);  
+    
+	if (stackTop){
+    	cout << "Het bovenste element op de stapel is: " << item << endl;
+    }
+    else{
+    	cout << "De stapel is leeg, er is geen bovenste element." << endl;
+    }
+    
     
     return 0;
 }
