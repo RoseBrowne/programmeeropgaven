@@ -6,9 +6,66 @@
 //
 //
 
-#ifndef __Stacks__vectorStack__
-#define __Stacks__vectorStack__
+#ifndef vectorStack_h
+#define vectorStack_h
 
-#include <stdio.h>
+#include <vector>
+using namespace std;
 
-#endif /* defined(__Stacks__vectorStack__) */
+template <class T>
+class vectorStack {
+	public:
+	
+		vectorStack() {
+			create();
+		}
+
+		void create() {
+		}
+
+		bool isEmpty() {
+			if (myVector.size() == 0){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+
+		void clear() {
+			int grootte = myVector.size();    
+			for (int i = 0; i < grootte; i++){
+				myVector.erase(myVector.begin()+(myVector.size()-1));
+			}
+		}
+
+		void push(T newItem, bool & success) {
+			myVector.push_back(newItem);
+		}
+
+		void pop(bool & success) {
+			if (isEmpty()){
+				success = false;
+			}
+			else {
+				myVector.erase(myVector.begin()+(myVector.size()-1));
+				success = true;
+			}
+		}
+
+		void top(T & topItem, bool & success) {
+			if (isEmpty()){
+				success = false;
+			}
+			else {
+				topItem = myVector.at(myVector.size()-1);
+				success = true;
+			}
+		}
+
+	private:
+		vector<int> myVector;
+		int index;
+};
+
+#endif
