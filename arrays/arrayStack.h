@@ -20,10 +20,6 @@ class arrayStack {
 		bool popIt;
 	
 		arrayStack() {
-			create();
-		}
-
-		void create() {
 			index = -1;
 		}
 

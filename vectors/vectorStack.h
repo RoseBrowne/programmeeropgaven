@@ -17,10 +17,6 @@ class vectorStack {
 	public:
 	
 		vectorStack() {
-			create();
-		}
-
-		void create() {
 		}
 
 		bool isEmpty() {
