@@ -75,5 +75,21 @@ int main(){
     	cout << "De stapel is leeg, er is geen bovenste element." << endl;
     }
     
+    cout << "Ik ga nu 5, 7 en 9 op de stapel pushen." << endl;
+    myVector.push(5, stackPush);
+    myVector.push(7, stackPush);
+    myVector.push(9, stackPush);
+    
+    cout << "Ik ga de stapel nu in één keer leeg maken. " << endl;
+    myVector.clear();
+    
+    myVector.top(item, stackTop);
+    if (stackTop){
+    	cout << "Het bovenste element op de stapel is: " << item << endl;
+    }
+    else{
+    	cout << "De stapel is leeg, er is geen bovenste element." << endl;
+    }
+    
     return 0;
 }
