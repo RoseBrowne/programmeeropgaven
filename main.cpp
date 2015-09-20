@@ -5,6 +5,8 @@
 //  Created by Patrick Bergman on 09/09/15.
 //
 //
+#include <iostream>
+#include "pointerStack.cpp"
 
 #include <iostream>
 
