@@ -14,10 +14,6 @@ template <class T>
 class pointerStack {
 public:
 	pointerStack() {
-		create();
-	}
-
-	void create() {
 		topItem = NULL;
 	}
 

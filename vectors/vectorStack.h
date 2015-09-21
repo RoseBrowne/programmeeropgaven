@@ -20,12 +20,7 @@ class vectorStack {
 		}
 
 		bool isEmpty() {
-			if (myVector.size() == 0){
-				return true;
-			}
-			else{
-				return false;
-			}
+			return myVector.size() == 0;
 		}
 
 		void clear() {

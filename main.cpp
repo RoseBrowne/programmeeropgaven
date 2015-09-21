@@ -1,26 +1,22 @@
-//
-//  main.cpp
-//  Stacks
-//
-//  Created by Patrick Bergman on 09/09/15.
-//
-//
 #include <iostream>
-#include "pointerStack.cpp"
-
-#include <iostream>
-
-#include "arrayStack.h"
+// #include "arrays/arrayStack.h"
+// #include "pointers/pointerStack.h"
+// #include "vectors/vectorStack.h"
+#include "stacks/stackStack.h"
 
 using namespace std;
 
-int main(){
+int main() {
+
 	bool stackPush = false, stackPop = false, stackTop = false;
 	int item;
 	
     cout << "Welkom!" << endl;
 
-    arrayStack myStack;
+    // arrayStack<int> myStack;
+    // pointerStack<int> myStack;
+    // vectorStack<int> myStack;
+    stackStack<int> myStack;
 
     if (myStack.isEmpty()){
     	cout << "De stapel is leeg." << endl;
@@ -52,7 +48,7 @@ int main(){
     cout << "Ik ga nu het bovenste item van de stapel afhalen." << endl;
     myStack.pop(stackPop);
     
-    if (stackTop){
+    if (stackPop){
     	cout << "Poppen van de stapel is gelukt." << endl;
     }
     else {

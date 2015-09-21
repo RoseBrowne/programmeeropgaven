@@ -17,10 +17,6 @@ template <class T>
 class stackStack {
 public:
 	stackStack() {
-		create();
-	}
-
-	void create() {
 		stack<T> myStack;
 	}
 
@@ -37,14 +33,17 @@ public:
 
 	void push(T newItem, bool& success) {
 		myStack.push(newItem);
+		success = true;
 	}
 
 	void pop(bool& success) {
 		myStack.pop();
+		success = true;
 	}
 
 	void top(T& getItem, bool& success) {
 		getItem = myStack.top();
+		success = true;
 	}
 
 	~stackStack() {
