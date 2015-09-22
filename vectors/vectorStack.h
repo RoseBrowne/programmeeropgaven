@@ -1,10 +1,10 @@
-//
-//  vectorStack.h
-//  Stacks
-//
-//  Created by Patrick Bergman on 09/09/15.
-//
-//
+/**
+* vectorStack: file to manage a stack based on the STL vector
+* @author Patrick Bergman (s1553097)
+* @author Rose Browne (s1652834)
+* @file vectorStack.h
+* @date 22-09-2015 Add comments
+**/
 
 #ifndef vectorStack_h
 #define vectorStack_h
@@ -16,6 +16,8 @@ template <class T>
 class vectorStack {
 	public:
 	
+		/* no create() function, since the constructor vectorStack() 
+		doest the same. */
 		vectorStack() {
 		}
 
@@ -23,6 +25,9 @@ class vectorStack {
 			return myVector.size() == 0;
 		}
 
+		/* There needs to be an extra variable "grootte" to determine
+		the scope of i, because myVector.size() will change after each
+		iteration in i. */
 		void clear() {
 			int grootte = myVector.size();    
 			for (int i = 0; i < grootte; i++){
@@ -55,7 +60,7 @@ class vectorStack {
 		}
 
 	private:
-		vector<int> myVector;
+		vector<T> myVector;
 		int index;
 };
 
